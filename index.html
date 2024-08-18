@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent and Ride</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    <link rel="icon" type="image/jpg" href="/images/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!--Header starts-->
+    <header>
+      <div class="logo-container">
+        <a href="#" class="logo"><img src="/images/logo.jpg" alt="logo" /></a>
+        <span class="brand-name"
+          >Rent <span style="color: rgb(48, 48, 182)">N</span> Ride</span
+        >
+      </div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rentNow">Rent Now</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>
+       
+      </ul>
+      <div class="signupmodal">
+        <div class="header-btn">
+          <button class="sign-in">Sign In</button>
+          <button class="sign-up modal-btn">Sign Up</button>
+        </div>
+        <div class="modal-bg">
+          <div class="modal">
+            <h2 style="text-align: center; color: #2c405d">Sign Up</h2>
+            <form>
+              <input
+                type="name"
+                class="input-box"
+                style="
+                  width: 50%;
+                  border: 1px solid #2c405d;
+                  border-radius: 5px;
+                  height: 30px;
+                  padding: 3px;
+                "
+                placeholder="Your Name"
+              />
+              <br />
+              <br />
+              <input
+                type="email"
+                class="input-box"
+                style="
+                  width: 50%;
+                  border: 1px solid #2c405d;
+                  border-radius: 5px;
+                  height: 30px;
+                  padding: 3px;
+                 
+                "
+                placeholder="Your Email"
+              />
+              <br />
+              <br />
+              <input
+                type="password"
+                class="input-box"
+                style="
+                  width: 50%;
+                  border: 1px solid #2c405d;
+                  border-radius: 5px;
+                  height: 30px;
+                  padding: 3px;
+                
+                "
+                placeholder="Your Password"
+              />
+              <p style="margin: 10px">
+                <span><input type="checkbox" /></span>I agree to the terms of
+                services
+              </p>
+
+              <button
+                class="signup-btn"
+                style="
+                  padding: 5px 10px;
+                  color: white;
+                  background-color: #2c405d;
+                  border-radius: 5px;
+                  margin: 5px;
+                  margin-bottom: 20px;
+                "
+              >
+                Sign up
+              </button>
+              <hr />
+              <p class="or">OR</p>
+              <button
+                type="button"
+                class="signup-btn"
+                style="
+                  padding: 5px 10px;
+                  color: white;
+                  background-color: #2c405d;
+                  border-radius: 5px;
+                  margin: 5px;
+                  margin-bottom: 20px;
+                "
+              >
+                Login with Google
+              </button>
+              <p>Already have an account? <a href="#">Sign in</a></p>
+              <span
+                class="modal-close"
+                style="
+                  font-size: 25px;
+                  background-color: red;
+                  border-radius: 3px;
+                  color: white;
+                  width: 30px;
+                  height: 35px;
+                  border: 1px solid black;
+                  margin-top: 1px;
+                  top: 0;
+                  margin-top: 10px;
+                "
+                >X</span
+              >
+            </form>
+          </div>
+        </div>
+        <!--another modal-->
+        
+      </div>
+    </header>
+    <!--Header ends-->
+    <!--Home section starts-->
+    <section
+      class="home"
+      id="home"
+      style="display: flex; justify-content: center"
+    >
+      <div class="text">
+        <h1><span>Want to travel</span> but <br />don't have a vehicle?</h1>
+        <p>
+          Get your perfect space vehicle. Just Rent and Ride to your
+          destination!!
+        </p>
+        <div class="app-stores">
+          <img
+            src="images/appstore.png"
+            alt="download"
+            style="
+              border-radius: 3px;
+              border: 0.5px solid white;
+              height: 26px;
+              margin-top: 8px;
+            "
+          />
+          <img
+            src="images/playStore.png"
+            alt="download"
+            style="height: 40px; margin-bottom: 20px"
+          />
+        </div>
+      </div>
+      
+      <div class="home-img">
+        <img src="" id="image" />
+      </div>
+    </section>
+    <!--ride section-->
+    <section id="ride">
+      <div class="heading">
+        <span>Steps to rent</span>
+        <h1>Rent N Ride in 3 Easy steps</h1>
+      </div>
+      <div class="ride-container">
+        <div class="box">
+         <h1 style="color: aliceblue;font-size: 30px;">1</h1>
+          <h2 style="margin-bottom: 10px;color:aliceblue;font-size: 30px;">Select destination</h2>
+          <p class="ride-para">Enter your destination to find the perfect ride for your journey</p>
+        </div>
+
+        <div class="box" style="margin-left: 130px;">
+        <h1 style="color: aliceblue;font-size: 30px;">2</h1>
+          <h2 style="color:aliceblue;font-size: 30px;">Pick-up Date</h2>
+          <p class="ride-para">Schedule the perfect start to your journey</p>
+        </div>
+
+        <div class="box">
+         <h1 style="color: aliceblue;font-size: 30px;">3</h1>
+          <h2 style="color:aliceblue;font-size: 30px;">Drop-off Date</h2>
+          <p class="ride-para">End Your Journey Smoothly,pick your drop-off date and we'll ensure a hassle-free return</p>
+        </div>
+      </div>
+    </section>
+    <!--ride section ends-->
+   <!--rent section starts-->
+    <section class="rentNow" id="rentNow">
+    <div class="rent-container">
+       
+    
+    <div class="rent-rental-container">
+        
+        <form>
+          <h1 class="rent-non-brand"> <span class="rent-brand" style="color:#151d28;font-size:30px;margin-bottom: 100px;">Rent Vehicle</span></h1>
+            <div class="rent-form-group">
+                <label class="rent-lbl" for="city"><p style="text-align: left;color:#151d28;font-size:20px">Select City:</p></label>
+                <select class="rent-select" id="city" required style=" width: 50%;
+                border: 1px solid #2c405d;
+                border-radius: 5px;
+                height: 40px;
+                padding: 3px;
+                width:500px">
+                    <option value="0">Select your city</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="pune">Pune</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                </select>
+            </div>
+            <div class="rent-form-group">
+                <label class="rent-lbl" for="location"><p style="text-align: left;color:#151d28;font-size:20px">Select Location:</p></label>
+                <input class="rent" type="text" id="location" placeholder="Enter drop location" required style=" width: 50%;
+                border: 1px solid #2c405d;
+                border-radius: 5px;
+                height: 40px;
+                padding: 3px;
+                width:100%">
+            </div>
+            <div class="rent-form-group">
+                <label class="rent-lbl" for="pickup-date"><p style="text-align: left;color:#151d28;font-size:20px">Pick-up Date:</p></label>
+                <input class="rent" type="date" id="pickup-date" required style=" width: 50%;
+                border: 1px solid #2c405d;
+                border-radius: 5px;
+                height: 40px;
+                padding: 3px;
+                width:100%">
+            </div>
+            <div class="rent-form-group">
+                <label class="rent-lbl" for="drop-date"><p style="text-align: left;color:#151d28;font-size:20px">Drop-off Date:</p></label>
+                <input class="rent" type="date" id="drop-date" required style=" width: 50%;
+                border: 1px solid #2c405d;
+                border-radius: 5px;
+                height: 40px;
+                padding: 3px;
+                width:100%">
+            </div>
+            <div class="rent-form-group">
+                <label for="rent-vehicle-type"><p style="text-align: left;color:#151d28;font-size:20px">Choose Vehicle Type:</p></label>
+                <select class="rent-select" id="rent-vehicle-type" required style=" width: 50%;
+                border: 1px solid #2c405d;
+                border-radius: 5px;
+                height: 40px;
+                padding: 3px;
+                width:100%">
+                    <option id="v0" value="0">Select Vehicle</option>
+                    <option id="v1" value="car">Car</option>
+                    <option id="v2" value="bike">Bike</option>
+                    <option id="v3" value="scooty">Scooty</option>
+                    <option id="v4" value="bicycle">Bicycle</option>
+                    <option id="v5" value="electric-scooty">Electric Scooty</option>
+                </select>
+            </div>
+            <button id="rent-btn">Rent Now</button>
+        </form>
+        
+    </div>
+
+    <div class="rent-vehicle-container">
+        <div class="rent-card-container">
+          <!--Car Section-->
+          <div class="rent-card">
+            <img src="/images/car2.webp" alt="Car-Image">
+            <h2>2021 Maruti Suzuki Fronx</h2>
+            <div class="rent-price">Rs.180000 <span>Rs.7550</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/car3.jpg" alt="Car-Image">
+            <h2>2022 Hyundai Exter Knight</h2>
+            <div class="rent-price">Rs.255000 <span>Rs.8550</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/car4.webp" alt="Car-Image">
+            <h2>2020 Hyundai Creta S</h2>
+            <div class="rent-price">Rs.160000 <span>Rs.7000</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/finalCar.jpg" alt="Car-Image">
+            <h2>2023 Honda Civic Hybrid</h2>
+            <div class="rent-price">Rs.120000 <span>Rs.6050</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+        
+
+          <!--Bike Section-->
+          <div class="rent-card">
+            <img src="/images/bike1.jpg" alt="Bike-Image">
+            <h2>2019 Honda CB Unicorn</h2>
+            <div class="rent-price">Rs.58500 <span>Rs.5500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/bike3.jpg" alt="Bike-Image">
+            <h2>22024 Chef Ranger XC14</h2>
+            <div class="rent-price">Rs.50000 <span>Rs.5500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/3bike.jpg" alt="Bike-Image">
+            <h2>Hero Extreme 200R</h2>
+            <div class="rent-price">Rs.65500 <span>Rs.6500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/4bike.jpg" alt="Bike-Image">
+            <h2>Hero Splender</h2>
+            <div class="rent-price">Rs.51500 <span>Rs.3500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          
+
+          <!--Petrol Scooty Section-->
+          <div class="rent-card">
+            <img src="/images/scooty1.jpg" alt="Scooty-Image">
+            <h2>TVS Scoty Pep Plus</h2>
+            <div class="rent-price">Rs.40000 <span>Rs.4500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/scooty2.jpg" alt="Scooty-Image">
+            <h2>Yamaha Cygnus</h2>
+            <div class="rent-price">Rs.60000 <span>Rs.5500</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/scooty3.jpg" alt="Scooty-Image">
+            <h2>Hero Maestro Edge</h2>
+            <div class="rent-price">Rs.55000 <span>Rs.4000</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/scooty4.jpg" alt="Scooty-Image">
+            <h2>Hero MotoCorp (Electric)</h2>
+            <div class="rent-price">Rs.80000 <span>Rs.7000</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+         
+
+          <!--Bicycle Section-->
+          <div class="rent-card">
+            <img src="/images/cycle1.jpg" alt="Bicycle-Image" >
+            <h2>2020 Avon Apex IBC 26T</h2>
+            <div class="rent-price">Rs.7500 <span>Rs.350</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/2cycle.jpg" alt="Bicycle-Image">
+            <h2>Tata Stryder</h2>
+            <div class="rent-price">Rs.8500 <span>Rs.400</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/3cycle.jpg" alt="Bicycle-Image">
+            <h2>2020 Avon Apex AZE</h2>
+            <div class="rent-price">Rs.7200 <span>Rs.325</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          <div class="rent-card">
+            <img src="/images/4cycle.jpg" alt="Bicycle-Image">
+            <h2>2020 Avon IBC 26T</h2>
+            <div class="rent-price">Rs.4000 <span>Rs.250</span>/month</div>
+            <button id="rent-btn" id="button" type="button">Rent now</button>
+          </div>
+          
+
+         
+          
+         
+
+        </div>
+      </div>
+      
+   
+</div>
+</section>
+
+    <!--rent section ends-->
+    
+
+    <!--review section starts-->
+    <section class="reviews" id="reviews" style="margin-top: 100px;">
+      <div class="container__left">
+        <h1>Read what our customers say about us</h1>
+        <p>
+          We prioritize your safety and comfort by regularly inspecting and
+          sanitizing all vehicles.
+        </p>
+        <p>
+          We have helped making transportation easy and accessible by offering
+          flexible vehicle rentals that suit your needs.
+        </p>
+        <button>Read our success stories</button>
+      </div>
+      <div class="container__right">
+        <div class="card">
+          <img src="/images/person1.avif" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                Excellent Service and Clean Vehicles! I highly recommend this
+                rental service for anyone looking for a hassle-free experience
+                at affordable rate.
+              </p>
+              <h4>- Aavya Saxena</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/person2.png" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                Convenient and Reliable , I have rented multiple times and they
+                never disappoint.
+              </p>
+              <h4>- Vivian Mohapatra</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/images/person3.png" alt="user" />
+          <div class="card__content">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <div class="card__details">
+              <p>
+                I absolutely loved the service , it was my first time using
+                rental service and it was a great experience.
+              </p>
+              <h4>- Meenakshi Roy</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--review section ends-->
+<!--contact us section starts-->
+    
+<section class="contactUs" id="contactUs" style="margin-top: 100px;"> 
+  <div class="container"> 
+   <h2 style="color:#526D82">Contact Us</h2> 
+   <p style="color:white">If you have any questions or need further information, feel free to contact us.</p> 
+   <div class="contact-form"> 
+    <form id="contactForm" action="#" method="post"> 
+     <div class="form-group"> 
+      <input type="text" id="name" name="name" placeholder="Username" required> 
+     </div> 
+     <div class="form-group"> 
+      <input type="email" id="email" name="email" placeholder="Email" required> 
+     </div> 
+     <div class="form-group"> 
+      <input type="text" id="subject" name="subject" placeholder="Phone" required> 
+     </div> 
+     <div class="form-group"> <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea> 
+     </div> <button type="submit" id="contact-btn" class="submit-button">Submit</button> 
+    </form> 
+   </div> 
+   <div class="contact-info"> 
+    <h3 style="color:#526D82">Get in Touch</h3> 
+    <p style="color:white"><span><i class="fa-solid fa-phone"></i> </span> +1 (234) 567-8901</p> 
+    <p style="color:white"><span><i class="fa-solid fa-envelope"></i></span> support@rentandride.com</p> 
+    <p style="color:white"><span><i class="fa-solid fa-address-book"></i></span> 46 Dhumwal Street, Bhubaneswar, India</p> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.57633708656!2d85.66455444059747!3d20.30081513423316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1723886645044!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div> 
+  </div> 
+ </section> 
+
+   <!--contact us section ends-->
+   <!--footer starts-->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>explore</h4>
+              <ul>
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Rent</a></li>
+                  <li><a href="#">Bookings</a></li>
+                  <li><a href="#">Vehicle status</a></li>
+                  <li><a href="#">payment options</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>online shop</h4>
+              <ul>
+                  <li><a href="#">Car</a></li>
+                  <li><a href="#">Bike</a></li>
+                  <li><a href="#">Cycle</a></li>
+                  <li><a href="#">Scooty</a></li>
+                  <li><a href="#">Jeep</a></li>
+                  <li><a href="#">Van</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
+                 <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+              </div>
+          </div>
+      </div>
+  </div>
+  </footer>
+  <!--footer ends-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
